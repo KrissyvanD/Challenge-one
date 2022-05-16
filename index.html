@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Where to Elon?</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src='main.js' defer = ""></script>
+	</head>
+	<body>
+<!-- Header so people can see what the page is about-->
+    <h1 class = "header"> Welcome to Space X</h1>
+
+    <ul class = "variables"></ul>
+<!-- Making inputs fields for interaction within the website -->
+<!-- Making a destination dropdown menu so the austronauts can see which destinations they can choose-->
+<div class="input">
+	<label for="destination">Where to?</label>
+  <select name="destination" id="destination" onchange="calculate()" >
+    <option value=34869>Earth</option>
+    <option value=47690>Moon</option>
+    <option value=10483>Mars</option>
+    <option value=17028>Jupiter</option>
+  </select>
+<br></br>
+
+<!-- Making a speed dropdown menu so the austronauts can see which speeds they can choose-->
+<label for="speed">Throttle Speed</label>
+  <select name="speed" id="speed" onchange="calculate()">
+    <option value=50>Extra slow</option>
+    <option value=100>Slow</option>
+    <option value=150>Medium</option>
+    <option value=200>Fast</option>
+    <option value=250>Ultra Fast</option>
+  </select>
+<br></br>
+
+<!-- Making a information field so the austronauts can see for how long they still have to travel if they keep the rate as it is now-->
+ <label for="time">Travel time in seconds: </label>
+  <input type="text" id="time" name="time" value="0" disabled><br><br>
+
+
+
+
+    <p> Earth Kilometers</p> 
+    <p class = "units" > 
+        <input id="kilometers" type="text" name="kilometers" value="0" onchange="conversion()"> </p>
+
+    <p> Mars Miles </p> 
+    <p class="units"> 
+        <input id="marsMiles" type="text" name="marsMiles" value="0" disabled>  </p>
+
+  </ul>
+
+</div>
+	</body>
+</html>

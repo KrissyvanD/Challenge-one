@@ -1,0 +1,16 @@
+body{
+	background-image: url(space.jpg);
+	align-items: center;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+}
+
+.header{
+	text-align: center;
+}
+
+.input{
+    color: white;
+   margin-left: 580px;
+   margin-top: 200px;
+}
